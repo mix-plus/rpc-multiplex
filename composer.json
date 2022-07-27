@@ -14,5 +14,7 @@
             "email": "evanxian9@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "mix-plus/utils": "dev-main"
+    }
 }
