@@ -2,11 +2,10 @@
 
 use MixPlus\RpcMultiplex\Packet;
 use MixPlus\RpcMultiplex\Socket\Server;
-use Swoole\Coroutine;
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
-Coroutine::create(function () {
+go(function () {
     $server = new Server();
     $config = [];
     echo 'swoole server running...';
